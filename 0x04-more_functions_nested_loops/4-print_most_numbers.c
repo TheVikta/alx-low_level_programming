@@ -1,18 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints the nums of the decimal sys except 2 & 4
+ * print_most_numbers - prints all numbers, skips 2 & 4
  *
- * Return: void
+ * Return: null
  */
 void print_most_numbers(void)
 {
 	int i;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		if (i != '4' && i != '2')
-			_putchar(i);
+		if (i != 2 && i != 4)
+			_putchar((i % 10) + '0');
 	}
+
 	_putchar('\n');
 }
+
