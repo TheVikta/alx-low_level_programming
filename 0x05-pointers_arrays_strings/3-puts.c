@@ -5,14 +5,13 @@
  * @str: string arg
  * Return: null
  */
+int _putchar(char c);
 void _puts(char *str)
 {
-	int i;
 
 	while (*str != '\0')
 	{
-		i = *str;
-		_putchar(i);
+		_putchar(*str);
 		str++;
 	}
 	_putchar('\n');
